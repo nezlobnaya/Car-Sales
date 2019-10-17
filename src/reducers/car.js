@@ -6,9 +6,9 @@ const initialState = {
         features: []
 };
 
-export default function car (state, action) {
+export default function car (state = initialState, action) {
     switch (action.type) {
         default:
             return state;
     }
-}
+};
