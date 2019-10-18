@@ -6,15 +6,7 @@ import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
 
 const App = (state) => {
-
-  const removeFeature = item => {
-    // dispatch an action here to remove an item
-  };
-
-  const buyItem = item => {
-    // dipsatch an action here to add an item
-  };
-
+ 
   return (
     <div className="boxes">
       <div className="box">
@@ -35,7 +27,4 @@ const mapStateToProps= (state) => ({
   additionalFeatures: state.additionalFeatures
 });
 
-export default connect(
-  mapStateToProps,
-  //mapDispatchToProps
-)(App);
+export default connect(mapStateToProps)(App);
